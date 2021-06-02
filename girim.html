@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>girim</title>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
+        <style>
+            body{
+                margin : 0 auto;
+                background-color: rgb(253, 234, 255);
+                position: relative;
+	            padding-top: 10px;
+	            padding-bottom: 80px;
+	            font-size: 14px;
+	            line-height: 1.8;
+	            min-height: 100%;
+	            color: #000000;
+            }
+            @media screen and (max-width: 768px){
+                body {width: auto}
+                
+            }
+            p {
+                text-align: justify;
+             }
+        
+             h5 {
+                font-weight: 600;
+            }
+        
+            .container {
+                max-width: 1024px;
+            }
+            .footer {
+                position: absolute;
+                bottom: 0px;
+                height: 60px;
+                width: 100%;
+                font-size: 14px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                background-color:#ffe9f5;
+                border-top: 1px solid #e0e0e0;
+            }
+
+            li {list-style: none;}
+            
+        </style>
+        <style>
+            #main-header{
+                padding: 10px 5px;
+            }
+
+            #main-header h1{
+                font-size: 20px;
+                font-weight: normal;
+                line-height: 27px;
+                color: #222;
+            }
+
+            #main-header ul{
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            #main-header li{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            #main-header li a{
+                color: #555;
+            }
+
+            #main-header li.active a{
+                color: black;
+                font-weight: 500;
+            }
+
+            #main-header label{
+                text-align: center;
+                float: right;
+                width: 40px;
+                height: 27px;
+                line-height: 27px;
+                color: #222;
+                border: 1px solid #222;
+                border-radius: 5px;
+            }
+
+            #checkbox{
+                display: none;
+            }
+
+            #checkbox + nav{
+                display: block;
+            }
+
+            #checkbox:checked + nav{
+                display: none;
+            }
+        </style>
+        <script 
+        src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+        crossorigin="anonymous"></script>
+        
+        <script>
+            $(document).ready(function(){
+
+            });
+        </script>
+        
+    </head>
+    <body>
+        
+            <!-- End of container -->
+            <div id="main-header">
+                <header class="container">
+                    <div>
+                        <label for= "checkbox">ㅇ</label>
+                        <h1>백기림</h1>
+                    </div>
+                    <input id="checkbox" checked="checked" type="checkbox">
+                    <nav>
+                        <ul>
+                            <li target-menu="menu_home"><a href="#home" id='home'>HOME</a>
+                            <script>
+                                document.getElementById('home').onclick =function(){
+                                    style{
+                                        #section1{
+                                            display:none;
+                                        }
+                                    }
+                                    
+                                }
+                            </script></li>
+                            <li target-menu="favorite1"><a href="#movie">MOVIE</a</li>
+                            <li target-menu="favorite2"><a href="#trip">TRIP</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        
+        <!-- End of navbar -->
+
+        <div class="container">
+            <div class="section1">
+                <div class="menu" id="menu_home">
+                    <div class="row">
+                        <div class="col">
+                            <img src="./girim_profile.jpg" width="40%">
+                        </div>
+
+                        <div col-2>
+
+                            <h5>자기소개</h5>
+                            <p>
+                               저는 강원대학교 컴퓨터정보통신공학과 19학번 백기림입니다.
+                               강원대학교 사범대학 부설고등학교를 졸업하였으며 2019년 3월에 강원대학교에 입학하였습니다.
+                            </p>
+
+                            <br>
+                            <hr>
+						    <div class="ui labels" style="margin-top:15px">
+							<a class="ui label" href="mailto:jass6698@kangwon.ac.kr" target="_blank"></i>jass6698@kangwon.ac.kr</a>
+						    </div>
+
+                            <blockquote class="blockquote text-right">
+                                <p class="mb-0"></p>
+                                <footer class="blockquote-footer">2021년 6월 2일 업데이트</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section2">
+                <div class="menu2" id="favorite1">
+                    <h5>영화</h5>
+                    <p>영화 사이트</p>
+                    <a href="https://www.netflix.com/kr/" target="_blank">NETFLIX</a>
+                    <br>
+                    <a href="https://watcha.com/" target="_blank">WATCHA</a>
+                    <br>
+                    
+                    <br>
+
+
+                </div>
+            </div>
+            
+            <div class="section3">
+                <div class="menu3" id="favorite2">
+                    <h5>여행</h5>
+                    <p>제주도</p>
+
+                    <p>강릉</p>
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="text-center .col-md-* text-muted">저작권 @2021 백기림 모든 권리 보유</p>
+        </footer>
+    </body>
+</html>
