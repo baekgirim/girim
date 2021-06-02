@@ -1,3 +1,4 @@
+![girim_profile](https://user-images.githubusercontent.com/85144781/120464006-6c762880-c3d7-11eb-9141-5b57c45ab342.jpg)
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/baekgirim/girim/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
